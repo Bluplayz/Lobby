@@ -11,20 +11,20 @@ use pocketmine\utils\TextFormat as C;
 class Main extends PluginBase {
   
   public function onEnable(){
-    $this->getLogger()->info(C::GREEN."Aktiviert!");
+    $this->getLogger()->notice(C::GREEN."Aktiviert!");
   }
   public function onDisable(){
-    $this->getLogger()->info(C::RED."Deaktiviert!");
+    $this->getLogger()->notice(C::RED."Deaktiviert!");
   }
   public function onCommand(CommandSender $s, Command $cmd,$label, array $args){
     $defaultspawn = $this->getServer()->getDefaultLevel()->getSpawnLocation();
     switch($cmd->getName()){
-      case "lobby":{
+      case "lobby":
         if($sender instanceof Player){
            $sender->getPlayer()->teleport($defaultspawn);
         }else{
           $sender->sendMessage(TextFormat::RED . "Use this command in-game!");
-        }
+        break;
       }
     }
   }
