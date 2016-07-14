@@ -12,3 +12,6 @@ class Main extends PluginBase {
   public function onEnable(){
     $this->getLogger()->info(C::GREEN."Aktiviert!");
   }
+  public function onDisable(){
+    $this->getLogger()->info(C::RED."Deaktiviert!")
+  }
