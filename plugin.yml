@@ -1,0 +1,8 @@
+name: Lobby
+main: Lobby\Main
+version: 1.0
+api: 2.0.0
+author: UltimateDevs
+commands:
+  Lobby:
+    description: "Lobby Command!"
