@@ -20,6 +20,9 @@ class Main extends PluginBase {
     $defaultspawn = $this->getServer()->getDefaultLevel()->getSpawnLocation();
     switch($cmd->getName()){
       case "lobby":
+      case "spawn":
+      case "hub":
+      case "l":
         if($sender instanceof Player){
            $sender->getPlayer()->teleport($defaultspawn);
         }else{
