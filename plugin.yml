@@ -6,3 +6,4 @@ author: UltimateDevs
 commands:
   Lobby:
     description: "Lobby Command!"
+    aliases: [hub,spawn,1]
