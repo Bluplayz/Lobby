@@ -24,8 +24,8 @@ class Main extends PluginBase {
            $sender->getPlayer()->teleport($defaultspawn);
         }else{
           $sender->sendMessage(C::RED."Use this command in-game!");
-        break;
         }
+        break;
     }
   }
 }
